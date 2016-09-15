@@ -1,0 +1,27 @@
+---
+layout: default
+
+---
+
+<h1>Recipes</h1>
+I like to cook, but often forget where I get recipes. A running compendium of recipes, including sources and modifications.
+
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="gallery">
+    <!-- date -->
+    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+    <!-- title/link -->
+    <h4>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h4>
+
+
+    </li>
+
+
+
+    {% endfor %}
+  </ul>

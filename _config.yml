@@ -1,0 +1,29 @@
+# Site settings
+title: Recipes
+email: flaneuseks@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Personal collection of recipes
+baseurl:  /recipes
+url:  flaneuse.github.io # the base hostname & protocol for your site
+twitter_username: flaneuseks
+github_username:  flaneuse
+
+# Build settings
+markdown: kramdown
+
+# highlighter: pygments
+
+# Pagination
+paginate: 15
+paginate_path: "/blog/page:num/"
+
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+  visresources:
+    output: true
+  poetry:
+    output: true
+    permalink: /poetry/:path/
