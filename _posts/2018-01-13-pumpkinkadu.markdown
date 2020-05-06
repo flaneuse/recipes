@@ -21,7 +21,7 @@ Based roughly on [NYT](https://cooking.nytimes.com/recipes/12893-afghan-style-pu
 * salt, pepper, cinnamon, sugar
 
 1. Cut pumpkin (carefully) into chunks.
-2. Pan fry pumpkin with ~ 1 tb. sugar on medium high heat till edges are golden, seasoning with salt and pepper. Sprinkle with cinnamon and remove.
+2. Pan fry pumpkin with ~ 1 tb. sugar on medium high heat till edges are golden, seasoning with salt and pepper. Sprinkle with cinnamon and remove. [2020-04-14: trying roasting instead]
 3. Heat oil and saute onion till golden brown.
 4. Add garlic, chili, and spices and cook ~ 30 s till toasted.
 5. Add tomatoes and continue to cook till tomatoes fall apart.

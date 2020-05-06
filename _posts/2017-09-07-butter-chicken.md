@@ -1,4 +1,3 @@
----
 layout: post
 title:  "Butter Chicken"
 date:   2017-09-07
@@ -27,5 +26,7 @@ sprinkle mace or allspice
 1/4 t cardamon
 Mix and add 2 tb. to marinade
 
-Add in ~ 1 tb. tomato paste w/ tomatoes
+Add in ~ 1 tb. (1 can?) tomato paste w/ tomatoes
 Add more tomatoes
+
+Don't add much of the marinade to the tomato sauce-- ends up tasting too much of raw garlic/ginger
