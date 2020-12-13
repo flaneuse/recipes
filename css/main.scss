@@ -3,27 +3,22 @@
 ---
 @charset "utf-8";
 
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+"colors",
+"base",
+"header"
+;
 
-
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+// Variables
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.25;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
 $on-palm:          600px;
 $on-laptop:        800px;
-
 
 
 // Using media queries with like this:
@@ -39,11 +34,74 @@ $on-laptop:        800px;
     }
 }
 
+// Basic styling
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+}
 
+.category {
+  text-transform: uppercase;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.border-bottom {
+  border-bottom: $brand-color 1px dashed;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  &:hover {
+    color: lighten($link-color, 10%);
+  }
+}
+
+a .icon {
+  fill: $link-color;
+  &:hover {
+    fill: lighten($link-color, 10%);
+  }
+}
+
+.ingredient p {
+  margin: 0;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+ul.unstyled {
+  list-style: none;
+  border-left: 8px solid #ccc;
+  padding-inline-start: 1em;
+}
+
+.icon, .star-icon {
+  height: 18px;
+  width: 18px;
+}
+
+.star-icon {
+  fill: $grey-color;
+}
+
+.card {
+  margin-right: 1.5rem!important;
+background: white;
+/* border: 1px solid #ccc; */
+padding: 0.5em 1em;
+width: 250px;
+margin-bottom: 1.5rem;
+border-radius: 4px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.category {
+  color: $accent-color;
+}

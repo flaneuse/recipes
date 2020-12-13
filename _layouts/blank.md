@@ -1,0 +1,259 @@
+# Note: make sure not to name filename with underscores.  should be `YYYY-MM-DD-the-title.md`
+---
+layout: post
+name:
+aggregateRating:
+dateCreated:
+dateModified:
+isBasedOn:
+  - url:
+    author:
+    name:
+cookTime:
+recipeYield:
+cookingMethod:
+  - bake
+  - barbecue
+  - blanch
+  - blind bake
+  - boil
+  - braise
+  - brine
+  - broil
+  - brown
+  - butterfly
+  - candy
+  - caramelize
+  - char
+  - chiffonade
+  - chill
+  - chop
+  - clarify
+  - clean fish
+  - coat
+  - confit
+  - cream
+  - crimp
+  - crush
+  - cure
+  - cut
+  - de-bone
+  - deep fry
+  - deglaze
+  - dice
+  - double boil
+  - dredge
+  - emulsify
+  - ferment
+  - flambe
+  - frost
+  - fry
+  - fry glaze
+  - grill
+  - indirect grilling
+  - infuse
+  - juice
+  - julienne
+  - knead
+  - macerate
+  - marinate
+  - mash
+  - melt
+  - microwave
+  - mince
+  - muddle
+  - no cook
+  - pan-fry
+  - pan-grill
+  - parboil
+  - pickle
+  - poach
+  - preserve
+  - pressure cook
+  - puree
+  - reduce
+  - render
+  - rice
+  - roast
+  - roux
+  - saute
+  - sear
+  - shuck
+  - simmer
+  - skewer
+  - skim
+  - slice
+  - slow cook
+  - smoke
+  - sous vide
+  - spatchcock
+  - steam
+  - steep
+  - stem
+  - stew
+  - stir-fry
+  - stuff
+  - sweat
+  - temper
+  - toast
+  - trim
+  - truss
+  - unmold
+  - wash
+  - water bath
+  - whip
+recipeCategory:
+  - breakfast
+  - brunch
+  - dinner
+  - easy
+  - for one
+  - for two
+  - lunch
+  - quick
+  - snack
+  - weekday
+  - weeknight
+  - dessert
+recipeCuisine:
+  - African
+  - American
+  - Asian
+  - Australian
+  - Austrian
+  - Barbecue
+  - Belgian
+  - Brazilian
+  - British
+  - Cajun
+  - Canadian
+  - Caribbean
+  - Central American
+  - Chinese
+  - Creole
+  - Cuban
+  - Eastern European
+  - Ethiopian
+  - Filipino
+  - French
+  - German
+  - Greek
+  - Icelandic
+  - Indian
+  - Indonesian
+  - Irish
+  - Italian
+  - Japanese
+  - Jewish
+  - Korean
+  - Latin American
+  - Malaysian
+  - Mediterranean
+  - Mexican
+  - Middle Eastern
+  - Moroccan
+  - New England
+  - Pakistani
+  - Portuguese
+  - Provencal
+  - Russian
+  - Scandinavian
+  - South American
+  - Southern
+  - Southwestern
+  - Spanish
+  - Thai
+  - Tibetan
+  - Turkish
+  - Vietnamese
+keywords:
+  - baking
+  - barbecues
+  - bars
+  - beans
+  - breads
+  - burgers
+  - burritos and nachos
+  - cakes
+  - candies
+  - casseroles
+  - chocolate
+  - citrus
+  - cocktails
+  - condiments
+  - cookbook exclusive
+  - cookies
+  - crackers and chips
+  - curries
+  - custards and puddings
+  - dips and spreads
+  - dumplings
+  - editors' pick
+  - finger foods
+  - grains and rice
+  - ice creams and sorbets
+  - ice dishes
+  - jams
+  - meat
+  - meatballs
+  - non-alcoholic drinks
+  - noodles
+  - one pot
+  - pancakes
+  - parfaits and trifles
+  - pastas
+  - pastries
+  - pickles
+  - pies and tarts
+  - pizza and calzones
+  - poultry
+  - project
+  - punches
+  - quick breads
+  - roasts
+  - salads and dressings
+  - sandwiches
+  - sauces
+  - sausages
+  - seafood
+  - shakes and smoothies
+  - skewers and kebabs
+  - slaws
+  - soups and stews
+  - spice
+  - steaks and chops
+  - stuffing and dressing
+  - tacos
+  - tagine
+  - times classics
+  - vegetables
+suitableForDiet:
+  - dairy-free
+  - gluten-free
+  - halal
+  - healthy
+  - high fiber
+  - high protein
+  - kosher
+  - low calorie
+  - low cholesterol
+  - low sugar
+  - low-carb
+  - low-fat
+  - low-sodium
+  - nut-free
+  - paleo
+  - raw
+  - vegan
+  - vegetarian
+recipeIngredient:
+  -
+recipeInstructions:
+  -
+comment:
+  -
+corrections:
+  -
+relatedTo:
+  -
+---

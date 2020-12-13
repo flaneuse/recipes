@@ -1,6 +1,13 @@
+
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 title: Recipes
-email: flaneuseks@gmail.com
+email: laura.d.hughes@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Personal collection of recipes
 baseurl:  /recipes
@@ -10,20 +17,21 @@ github_username:  flaneuse
 
 # Build settings
 markdown: kramdown
+theme: minima
+permalink: /:categories/:title/
+paginate: 10
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
 
-# highlighter: pygments
-
-# Pagination
-paginate: 15
-paginate_path: "/blog/page:num/"
-
-
-collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/
-  visresources:
-    output: true
-  poetry:
-    output: true
-    permalink: /poetry/:path/
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

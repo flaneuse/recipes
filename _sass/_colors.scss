@@ -1,0 +1,29 @@
+// ldh brand colors
+$teal: #4fc0cc;
+$mauve: #cc6da5;
+$blue: #1154d1;
+$chartreuse: #b8b300;
+$ltblue: #5881d1;
+$wine: #842e4e;
+$aquamarine: #a8d5d2;
+$emerald: #148974;
+$green: #1bba6c;
+$yellow: #ffcf61;
+$darkpink: #b8345a;
+$coral: #ff827c;
+$beige: #cca582;
+$brightblue: #55d5ff;
+$pink: #ff4cba;
+$grey: #7b8081;
+
+// color variables
+$brand-color: $blue;
+$accent-color: $teal;
+$link-color: $emerald;
+$text-color: #111;
+
+// greys
+$background-color: #f5f5f5;
+$grey-color: $grey;//#828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);

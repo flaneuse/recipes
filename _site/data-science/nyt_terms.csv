@@ -1,0 +1,226 @@
+category,type
+dairy-free,suitableForDiet
+gluten-free,suitableForDiet
+halal,suitableForDiet
+healthy,suitableForDiet
+high fiber,suitableForDiet
+high protein,suitableForDiet
+kosher,suitableForDiet
+low calorie,suitableForDiet
+low cholesterol,suitableForDiet
+low sugar,suitableForDiet
+low-carb,suitableForDiet
+low-fat,suitableForDiet
+low-sodium,suitableForDiet
+nut-free,suitableForDiet
+paleo,suitableForDiet
+raw,suitableForDiet
+vegan,suitableForDiet
+vegetarian,suitableForDiet
+african,recipeCuisine
+american,recipeCuisine
+asian,recipeCuisine
+australian,recipeCuisine
+austrian,recipeCuisine
+barbecue,recipeCuisine
+belgian,recipeCuisine
+brazilian,recipeCuisine
+british,recipeCuisine
+cajun,recipeCuisine
+canadian,recipeCuisine
+caribbean,recipeCuisine
+central american,recipeCuisine
+chinese,recipeCuisine
+creole,recipeCuisine
+cuban,recipeCuisine
+eastern european,recipeCuisine
+ethiopian,recipeCuisine
+filipino,recipeCuisine
+french,recipeCuisine
+german,recipeCuisine
+greek,recipeCuisine
+icelandic,recipeCuisine
+indian,recipeCuisine
+indonesian,recipeCuisine
+irish,recipeCuisine
+italian,recipeCuisine
+japanese,recipeCuisine
+jewish,recipeCuisine
+korean,recipeCuisine
+latin american,recipeCuisine
+malaysian,recipeCuisine
+mediterranean,recipeCuisine
+mexican,recipeCuisine
+middle eastern,recipeCuisine
+moroccan,recipeCuisine
+new england,recipeCuisine
+pakistani,recipeCuisine
+portuguese,recipeCuisine
+provencal,recipeCuisine
+russian,recipeCuisine
+scandinavian,recipeCuisine
+south american,recipeCuisine
+southern,recipeCuisine
+southwestern,recipeCuisine
+spanish,recipeCuisine
+thai,recipeCuisine
+tibetan,recipeCuisine
+turkish,recipeCuisine
+vietnamese,recipeCuisine
+bake,cookingMethod
+barbecue,cookingMethod
+blanch,cookingMethod
+blind bake,cookingMethod
+boil,cookingMethod
+braise,cookingMethod
+brine,cookingMethod
+broil,cookingMethod
+brown,cookingMethod
+butterfly,cookingMethod
+candy,cookingMethod
+caramelize,cookingMethod
+char,cookingMethod
+chiffonade,cookingMethod
+chill,cookingMethod
+chop,cookingMethod
+clarify,cookingMethod
+clean fish,cookingMethod
+coat,cookingMethod
+confit,cookingMethod
+cream,cookingMethod
+crimp,cookingMethod
+crush,cookingMethod
+cure,cookingMethod
+cut,cookingMethod
+de-bone,cookingMethod
+deep fry,cookingMethod
+deglaze,cookingMethod
+dice,cookingMethod
+double boil,cookingMethod
+dredge,cookingMethod
+emulsify,cookingMethod
+ferment,cookingMethod
+flambe,cookingMethod
+frost,cookingMethod
+fry,cookingMethod
+fry glaze,cookingMethod
+grill,cookingMethod
+indirect grilling,cookingMethod
+infuse,cookingMethod
+juice,cookingMethod
+julienne,cookingMethod
+knead,cookingMethod
+macerate,cookingMethod
+marinate,cookingMethod
+mash,cookingMethod
+melt,cookingMethod
+microwave,cookingMethod
+mince,cookingMethod
+muddle,cookingMethod
+no cook,cookingMethod
+pan-fry,cookingMethod
+pan-grill,cookingMethod
+parboil,cookingMethod
+pickle,cookingMethod
+poach,cookingMethod
+preserve,cookingMethod
+pressure cook,cookingMethod
+puree,cookingMethod
+reduce,cookingMethod
+render,cookingMethod
+rice,cookingMethod
+roast,cookingMethod
+roux,cookingMethod
+saute,cookingMethod
+sear,cookingMethod
+shuck,cookingMethod
+simmer,cookingMethod
+skewer,cookingMethod
+skim,cookingMethod
+slice,cookingMethod
+slow cook,cookingMethod
+smoke,cookingMethod
+sous vide,cookingMethod
+spatchcock,cookingMethod
+steam,cookingMethod
+steep,cookingMethod
+stem,cookingMethod
+stew,cookingMethod
+stir-fry,cookingMethod
+stuff,cookingMethod
+sweat,cookingMethod
+temper,cookingMethod
+toast,cookingMethod
+trim,cookingMethod
+truss,cookingMethod
+unmold,cookingMethod
+wash,cookingMethod
+water bath,cookingMethod
+whip,cookingMethod
+breakfast,recipeCategory
+brunch,recipeCategory
+dinner,recipeCategory
+easy,recipeCategory
+for one,recipeCategory
+for two,recipeCategory
+lunch,recipeCategory
+quick,recipeCategory
+snack,recipeCategory
+weekday,recipeCategory
+weeknight,recipeCategory
+Video,recipeCategory
+barbecues,keywords
+beans,keywords
+breads,keywords
+burgers,keywords
+burritos and nachos,keywords
+cakes,keywords
+candies,keywords
+casseroles,keywords
+cocktails,keywords
+condiments,keywords
+cookbook exclusive,keywords
+cookies and bars,keywords
+crackers and chips,keywords
+curries,keywords
+custards and puddings,keywords
+dips and spreads,keywords
+dumplings,keywords
+editors' pick,keywords
+finger foods,keywords
+grains and rice,keywords
+ice creams and sorbets,keywords
+ice dishes,keywords
+jams,keywords
+meat,keywords
+meatballs,keywords
+non-alcoholic drinks,keywords
+noodles,keywords
+one pot,keywords
+pancakes,keywords
+parfaits and trifles,keywords
+pastas,keywords
+pastries,keywords
+pickles,keywords
+pies and tarts,keywords
+pizza and calzones,keywords
+poultry,keywords
+project,keywords
+punches,keywords
+quick breads,keywords
+roasts,keywords
+salads and dressings,keywords
+sandwiches,keywords
+sauces and gravies,keywords
+sausages,keywords
+seafood,keywords
+shakes and smoothies,keywords
+skewers and kebabs,keywords
+slaws,keywords
+soups and stews,keywords
+steaks and chops,keywords
+stuffing and dressing,keywords
+tacos,keywords
+tagine,keywords
+times classics,keywords
+vegetables,keywords

@@ -4,14 +4,122 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <h2 class="post-title">{{ page.title }}</h2>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y — %H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <h2 class="post-title mb-0">{{ page.name }}</h2>
+    <div id="rating" class="m-0">
+      {% assign rating_ceil = page.aggregateRating | ceil %}
+      {% assign rating_floor = page.aggregateRating | floor %}
+      {% assign rating_half = rating_ceil | minus: rating_floor %}
+      {% assign rating_empty = 5 | minus: rating_ceil %}
+
+      {% for star in (1..rating_floor) %}
+      <svg class="star-icon">
+        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#star"></use>
+      </svg>
+      {% endfor %}
+
+      {% if rating_half == 1 %}
+      <svg class="star-icon">
+        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#half-star"></use>
+      </svg>
+      {% endif %}
+
+      {% for star in (1.. rating_empty) %}
+      <svg class="star-icon">
+        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#empty-star"></use>
+      </svg>
+      {% endfor %}
+    </div>
+
+    <p class="post-meta">{{ page.dateModified | date: "%-d %B %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <div id="categories">
+    {% assign sorted_cats = page.recipeCategory | sort %}
+    {% for category in sorted_cats %}
+    <button>
+      <small class="category">
+        {{ category }}
+      </small>
+    </button>
+    {% endfor %}
+    <div>
 
-  <div class = "return"><a href = "/recipes/">return to recipes</a><div>
 
-</div>
+      <article class="post-content">
+        <p>
+          based on:
+          {% for source in page.isBasedOn %}
+          {% if source.url %}
+          <a href="{{source.url}}" target="_blank">{{source.name}}</a>
+          {% else %}
+          <span>{{ source.name }}</span>
+          {% endif %}
+          <span>by {{ source.author }}</span>
+          {% endfor %}
+        </p>
+        {% if page.description %}
+        <p>
+          {{ page.description | markdownify }}
+        </p>
+        {% endif %}
+        <!-- <h4>Ingredients</h4> -->
+        <ul id="ingredients" class="unstyled mb-4">
+          {% for ingredient in page.recipeIngredient %}
+          <li>
+            <span class="ingredient">{{ ingredient | markdownify }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <!-- <h4>Instructions</h4> -->
+        <ol id="instructions">
+          {% for instruction in page.recipeInstructions %}
+          <li>
+            {{ instruction | markdownify }}
+          </li>
+          {% endfor %}
+        </ol>
+
+        {% if page.comment %}
+        <div id="comments">
+          <h5>
+            Notes
+          </h5>
+
+          <ul id="comment-list">
+            {% for comment in page.comment %}
+            <li>
+              {{ comment | markdownify }}
+            </li>
+            {% endfor %}
+          </ul>
+
+        </div>
+        {% endif %}
+
+        {% if page.corrections %}
+        <div id="corrections">
+          <h5>
+            Modifications
+          </h5>
+          <ul id="correction-list">
+            {% for correction in page.corrections %}
+            <li>
+              {{ correction | markdownify }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </article>
+
+      <div class="return my-5">
+        <a href="/recipes/" class="d-flex align-items-center">
+          <svg class="icon icon-angle-double-left mr-2">
+            <use xlink:href="{{ site.baseurl }}/assets/icons.svg#icon-angle-double-left"></use>
+          </svg>
+          return to recipes
+        </a>
+        <div>
+
+        </div>

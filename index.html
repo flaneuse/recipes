@@ -1,27 +1,141 @@
 ---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
-
 ---
 
+<div class="col-sm-12">
 <h1>Recipes</h1>
-I like to cook, but often forget where I get recipes. A running compendium of recipes, including sources and modifications.
+<!-- <p class="my-2">Personal collection of recipes and notes</p> -->
+</div>
 
-
-<ul class="post-list">
+<div class="d-flex">
+<div class="post-list d-flex flex-wrap">
+  <!-- {% assign posts_grouped = site.posts | sort: 'aggregateRating' | reverse %} -->
+  {% assign id = 0 %}
   {% for post in site.posts %}
-  <li class="gallery">
+  {% assign id = id | plus:1 %}
+
+  <div class="card py-3" id="{{id}}">
     <!-- date -->
-    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!-- <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span> -->
 
     <!-- title/link -->
-    <h4>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h4>
+    <h3 class="mx-0 my-1">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.name }}</a>
+    </h3>
+
+    <div id="rating" class="m-0">
+      {% assign rating_ceil = post.aggregateRating | ceil %}
+      {% assign rating_floor = post.aggregateRating | floor %}
+      {% assign rating_half = rating_ceil | minus: rating_floor %}
+      {% assign rating_empty = 5 | minus: rating_ceil %}
+
+      {% for star in (1..rating_floor) %}
+      <svg class="star-icon">
+        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#star"></use>
+      </svg>
+      {% endfor %}
+
+      {% if rating_half == 1 %}
+      <svg class="star-icon">
+        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#half-star"></use>
+      </svg>
+      {% endif %}
+
+      {% for star in (1.. rating_empty) %}
+      <svg class="star-icon">
+        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#empty-star"></use>
+      </svg>
+      {% endfor %}
+    </div>
+
+    <!-- provenance -->
+    <small class="d-block mb-2">
+      based on:
+      {% for source in post.isBasedOn %}
+      {% if source.url %}
+      <a href="{{source.url}}" target="_blank">
+      {% if source.name %}
+      <span>{{source.name}}</span>
+      {% else %}
+      <span>{{source.author}}</span>
+      {% endif %}
+      </a>
+      {% else %}
+      <span>{{ source.name }}</span>
+      {% endif %}
+      {% if source.name %}
+      <span>by </span>
+      <span>{{ source.author }}</span>
+      {% endif %}
+      {% endfor %}
+    </small>
 
 
-    </li>
+    <small>
+    <!-- date -->
+    <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
+    <span class="mx-2">•</span>
+    {% assign sorted_cats = post.keywords | sort %}
+    {% for category in sorted_cats %}
+    <span class="category mr-1">
+      {{ category }}
+      </span>
+          {% endfor %}
+    </small>
 
+  </div>
+  {% endfor %}
+</div>
+<div class="col-sm-2 category-list">
+Categories
+<button id="all" onclick="filterUsingCategory('all')">
+  clear filter
+</button>
 
+{% assign categories = site.posts | map: "keywords" | uniq | sort %}
+{% for category in categories %}
+  {% assign cat = category %}
+  <button id="{{ cat }}" onclick="filterUsingCategory(this.id)">
+    {{ cat }}
+  </button>
+{% endfor %}
+</div>
+</div>
 
-    {% endfor %}
-  </ul>
+<!-- Pagination links -->
+<!-- <div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{site.baseurl}}{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{site.baseurl}}{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div> -->
+
+<!-- from https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/ -->
+<script type="text/javascript">
+  function filterUsingCategory(selectedCategory) {
+        var id = 0;
+       {% for post in site.posts %}
+        var cats = {{ post.keywords | jsonify }}
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'all' || cats.includes(selectedCategory))
+          ? 'unset'
+          : 'none';
+       {% endfor %}
+  }
+  </script>
