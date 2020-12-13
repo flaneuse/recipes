@@ -2,7 +2,8 @@
 ---
 layout: post
 name:
-image: 
+description:
+image:
 aggregateRating:
 dateCreated:
 dateModified:
@@ -112,6 +113,7 @@ recipeCategory:
   - for two
   - lunch
   - quick
+  - side dish
   - snack
   - weekday
   - weeknight
@@ -221,6 +223,7 @@ keywords:
   - skewers and kebabs
   - slaws
   - soups and stews
+  - sourdough
   - spice
   - steaks and chops
   - stuffing and dressing

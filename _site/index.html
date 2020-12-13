@@ -545,6 +545,172 @@
 
   </div>
   
+  
+
+  <div class="card py-3" id="7">
+    <!-- image -->
+    
+    <img alt="Field Blend 1" class="card-image" src="/recipes/assets/img/field-blend-1.jpg" />
+    
+
+    <!-- title/link -->
+    <h3 class="mx-0 mt-3 mb-2">
+      <a class="post-link" href="/recipes/field-blend-1/">Field Blend 1</a>
+    </h3>
+
+    <div id="rating" class="m-0">
+      
+      
+      
+      
+
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+
+      
+
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#empty-star"></use>
+      </svg>
+      
+    </div>
+
+    <!-- provenance -->
+    <small class="d-block mb-2">
+      based on:
+      
+      
+      <a href="https://www.amazon.com/Flour-Water-Salt-Yeast-Fundamentals/dp/160774273X" target="_blank">
+      
+      <span>Flour Water Salt Yeast</span>
+      
+      </a>
+      
+      
+      <span>by </span>
+      <span>Ken Forkish</span>
+      
+      
+    </small>
+
+
+    <small>
+    <!-- date -->
+    <span class="post-date">1 December 2020</span>
+    <span class="mx-2">•</span>
+    
+    
+    <span class="category mr-1">
+      baking
+      </span>
+          
+    <span class="category mr-1">
+      breads
+      </span>
+          
+    </small>
+
+  </div>
+  
+  
+
+  <div class="card py-3" id="8">
+    <!-- image -->
+    
+    <img alt="Pain de Campagne" class="card-image" src="/recipes/assets/img/pain-de-campagne.jpg" />
+    
+
+    <!-- title/link -->
+    <h3 class="mx-0 mt-3 mb-2">
+      <a class="post-link" href="/recipes/pain-de-campagne/">Pain de Campagne</a>
+    </h3>
+
+    <div id="rating" class="m-0">
+      
+      
+      
+      
+
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#half-star"></use>
+      </svg>
+      
+
+      
+    </div>
+
+    <!-- provenance -->
+    <small class="d-block mb-2">
+      based on:
+      
+      
+      <a href="https://www.amazon.com/Flour-Water-Salt-Yeast-Fundamentals/dp/160774273X" target="_blank">
+      
+      <span>Flour Water Salt Yeast</span>
+      
+      </a>
+      
+      
+      <span>by </span>
+      <span>Ken Forkish</span>
+      
+      
+    </small>
+
+
+    <small>
+    <!-- date -->
+    <span class="post-date">4 November 2020</span>
+    <span class="mx-2">•</span>
+    
+    
+    <span class="category mr-1">
+      baking
+      </span>
+          
+    <span class="category mr-1">
+      breads
+      </span>
+          
+    </small>
+
+  </div>
+  
 </div>
 <div class="col-sm-2 category-list">
 Categories
@@ -557,6 +723,11 @@ Categories
   
   <button id="baking" onclick="filterUsingCategory(this.id)">
     baking
+  </button>
+
+  
+  <button id="breads" onclick="filterUsingCategory(this.id)">
+    breads
   </button>
 
   
@@ -656,6 +827,22 @@ Categories
           : 'none';
        
         var cats = ["baking","cookies","citrus"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'all' || cats.includes(selectedCategory))
+          ? 'unset'
+          : 'none';
+       
+        var cats = ["baking","breads"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'all' || cats.includes(selectedCategory))
+          ? 'unset'
+          : 'none';
+       
+        var cats = ["baking","breads"]
 
       var postDiv = document.getElementById(++id);
       postDiv.style.display =

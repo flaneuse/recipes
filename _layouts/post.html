@@ -5,6 +5,8 @@ layout: default
 
   <header class="post-header">
     <h2 class="post-title mb-0">{{ page.name }}</h2>
+
+    <!-- rating -->
     <div id="rating" class="m-0">
       {% assign rating_ceil = page.aggregateRating | ceil %}
       {% assign rating_floor = page.aggregateRating | floor %}
@@ -30,14 +32,15 @@ layout: default
       {% endfor %}
     </div>
 
+
     <p class="post-meta">{{ page.dateModified | date: "%-d %B %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
   <div id="categories">
-    {% assign sorted_cats = page.recipeCategory | sort %}
+    {% assign sorted_cats = page.keywords | sort %}
     {% for category in sorted_cats %}
     <button>
-      <small class="category">
+      <small class="">
         {{ category }}
       </small>
     </button>
@@ -46,6 +49,7 @@ layout: default
 
 
       <article class="post-content">
+        <!-- provenance  -->
         <p>
           based on:
           {% for source in page.isBasedOn %}
@@ -57,11 +61,14 @@ layout: default
           <span>by {{ source.author }}</span>
           {% endfor %}
         </p>
+
+        <!-- description -->
         {% if page.description %}
-        <p>
+        <div class="m-0 accent">
           {{ page.description | markdownify }}
-        </p>
+        </div>
         {% endif %}
+
         <!-- <h4>Ingredients</h4> -->
         <ul id="ingredients" class="unstyled mb-4">
           {% for ingredient in page.recipeIngredient %}
