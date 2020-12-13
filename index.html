@@ -18,11 +18,15 @@ layout: default
   {% assign id = id | plus:1 %}
 
   <div class="card py-3" id="{{id}}">
-    <!-- date -->
-    <!-- <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span> -->
+    <!-- image -->
+    {% if post.image %}
+    <img alt="{{post.name}}" class="card-image" src="{{ site.baseurl }}/assets/img/{{post.image}}" />
+    {% else %}
+    <div class="image-placeholder"> </div>
+    {% endif %}
 
     <!-- title/link -->
-    <h3 class="mx-0 my-1">
+    <h3 class="mx-0 mt-3 mb-2">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.name }}</a>
     </h3>
 

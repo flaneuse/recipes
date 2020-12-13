@@ -1,6 +1,7 @@
 ---
 layout: post
 name: Lemon Tea Cakes
+image: lemon-tea.jpg
 aggregateRating: 3
 dateCreated: 2020-12-05
 dateModified: 2020-12-05

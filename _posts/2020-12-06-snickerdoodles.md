@@ -1,6 +1,7 @@
 ---
 layout: post
 name: Snickerdoodles
+image: snickerdoodles.jpg
 isBasedOn:
   - url: https://smittenkitchen.com/2009/09/snickerdoodles/
     name: Smitten Kitchen

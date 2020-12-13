@@ -1,6 +1,7 @@
 ---
 layout: post
 name: Dorie's Lemon Sugar Cookies
+image: lemon-sugar.jpg
 aggregateRating: 4.5
 dateCreated: 2020-12-12
 dateModified: 2020-12-12
