@@ -2,6 +2,7 @@
 ---
 layout: post
 name:
+image: 
 aggregateRating:
 dateCreated:
 dateModified:
