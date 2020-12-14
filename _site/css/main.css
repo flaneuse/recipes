@@ -41,9 +41,6 @@ body {
   -webkit-text-size-adjust: 100%;
   margin: 0; }
 
-.category {
-  text-transform: uppercase; }
-
 .border-bottom {
   border-bottom: #1154d1 1px dashed; }
 
@@ -109,7 +106,12 @@ ul.unstyled {
   background: #ddd; }
 
 .category {
-  color: #4fc0cc; }
+  text-transform: uppercase;
+  color: #842e4e; }
+
+.keyword {
+  text-transform: uppercase;
+  color: #b8345a; }
 
 .accent, .accent p {
   color: #4fc0cc; }

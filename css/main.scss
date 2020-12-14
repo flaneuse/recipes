@@ -46,10 +46,6 @@ body {
     margin: 0;
 }
 
-.category {
-  text-transform: uppercase;
-}
-
 .border-bottom {
   border-bottom: $brand-color 1px dashed;
 }
@@ -133,7 +129,13 @@ $card-width: 250px;
 }
 
 .category {
-  color: $accent-color;
+  text-transform: uppercase;
+  color: $wine;
+}
+
+.keyword {
+  text-transform: uppercase;
+  color: $darkpink;
 }
 
 .accent, .accent p {

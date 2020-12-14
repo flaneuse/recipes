@@ -24,12 +24,14 @@ layout: default
     {% else %}
     <div class="image-placeholder"> </div>
     {% endif %}
-
+<div class="d-flex flex-column justify-content-between flex-grow-1">
+  <div>
     <!-- title/link -->
     <h3 class="mx-0 mt-3 mb-2">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.name }}</a>
     </h3>
 
+<!-- rating -->
     <div id="rating" class="m-0">
       {% assign rating_ceil = post.aggregateRating | ceil %}
       {% assign rating_floor = post.aggregateRating | floor %}
@@ -76,20 +78,32 @@ layout: default
       {% endif %}
       {% endfor %}
     </small>
+    </div>
 
 
     <small>
     <!-- date -->
     <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
+
     <span class="mx-2">•</span>
-    {% assign sorted_cats = post.keywords | sort %}
+
+    {% assign sorted_cats = post.recipeCuisine | sort %}
     {% for category in sorted_cats %}
     <span class="category mr-1">
       {{ category }}
       </span>
+      {% endfor %}
+
+    <span class="mx-2">•</span>
+
+    {% assign sorted_keys = post.keywords | concat: post.recipeCategory | sort %}
+    {% for category in sorted_keys %}
+    <span class="keyword mr-1">
+      {{ category }}
+      </span>
           {% endfor %}
     </small>
-
+</div>
   </div>
   {% endfor %}
 </div>
