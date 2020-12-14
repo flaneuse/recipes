@@ -49,6 +49,111 @@
   <div class="card py-3" id="1">
     <!-- image -->
     
+    <img alt="Roast Chicken with Mushroom and Sage Butter under the skin" class="card-image" src="/recipes/assets/img/sage-mushroom-chicken.jpg" />
+    
+<div class="d-flex flex-column justify-content-between flex-grow-1">
+  <div>
+    <!-- title/link -->
+    <h3 class="mx-0 mt-3 mb-2">
+      <a class="post-link" href="/recipes/roast-chicken-with-mushroom-sage-butter/">Roast Chicken with Mushroom and Sage Butter under the skin</a>
+    </h3>
+
+<!-- rating -->
+    <div id="rating" class="m-0">
+      
+      
+      
+      
+
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#star"></use>
+      </svg>
+      
+
+      
+
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#empty-star"></use>
+      </svg>
+      
+      <svg class="star-icon">
+        <use xlink:href="/recipes/assets/icons.svg#empty-star"></use>
+      </svg>
+      
+    </div>
+
+    <!-- provenance -->
+    <small class="d-block mb-2">
+      based on:
+      
+      
+      <a href="https://www.amazon.com/Bird-Hand-Chicken-recipes-every/dp/178472002X" target="_blank">
+      
+      <span>A Bird in the Hand</span>
+      
+      </a>
+      
+      
+      <span>by </span>
+      <span>Diana Henry</span>
+      
+      
+    </small>
+    </div>
+
+
+    <small>
+    <!-- date -->
+    <span class="post-date">13 December 2020</span>
+
+    <span class="mx-2">•</span>
+
+    
+    
+    <span class="category mr-1">
+      American
+      </span>
+      
+    <span class="category mr-1">
+      British
+      </span>
+      
+
+    <span class="mx-2">•</span>
+
+    
+    
+    <span class="keyword mr-1">
+      dinner
+      </span>
+          
+    <span class="keyword mr-1">
+      poultry
+      </span>
+          
+    <span class="keyword mr-1">
+      roasts
+      </span>
+          
+    </small>
+</div>
+  </div>
+  
+  
+
+  <div class="card py-3" id="2">
+    <!-- image -->
+    
     <img alt="Dorie's Lemon Sugar Cookies" class="card-image" src="/recipes/assets/img/lemon-sugar.jpg" />
     
 <div class="d-flex flex-column justify-content-between flex-grow-1">
@@ -151,7 +256,7 @@
   
   
 
-  <div class="card py-3" id="2">
+  <div class="card py-3" id="3">
     <!-- image -->
     
     <div class="image-placeholder"> </div>
@@ -264,7 +369,7 @@
   
   
 
-  <div class="card py-3" id="3">
+  <div class="card py-3" id="4">
     <!-- image -->
     
     <div class="image-placeholder"> </div>
@@ -373,7 +478,7 @@
   
   
 
-  <div class="card py-3" id="4">
+  <div class="card py-3" id="5">
     <!-- image -->
     
     <div class="image-placeholder"> </div>
@@ -477,7 +582,7 @@
   
   
 
-  <div class="card py-3" id="5">
+  <div class="card py-3" id="6">
     <!-- image -->
     
     <img alt="Snickerdoodles" class="card-image" src="/recipes/assets/img/snickerdoodles.jpg" />
@@ -582,7 +687,7 @@
   
   
 
-  <div class="card py-3" id="6">
+  <div class="card py-3" id="7">
     <!-- image -->
     
     <img alt="Lemon Tea Cakes" class="card-image" src="/recipes/assets/img/lemon-tea.jpg" />
@@ -684,7 +789,7 @@
   
   
 
-  <div class="card py-3" id="7">
+  <div class="card py-3" id="8">
     <!-- image -->
     
     <img alt="Field Blend 1" class="card-image" src="/recipes/assets/img/field-blend-1.jpg" />
@@ -785,7 +890,7 @@
   
   
 
-  <div class="card py-3" id="8">
+  <div class="card py-3" id="9">
     <!-- image -->
     
     <img alt="Pain de Campagne" class="card-image" src="/recipes/assets/img/pain-de-campagne.jpg" />
@@ -929,6 +1034,16 @@ Categories
   </button>
 
   
+  <button id="poultry" onclick="filterUsingCategory(this.id)">
+    poultry
+  </button>
+
+  
+  <button id="roasts" onclick="filterUsingCategory(this.id)">
+    roasts
+  </button>
+
+  
   <button id="sauces" onclick="filterUsingCategory(this.id)">
     sauces
   </button>
@@ -958,6 +1073,14 @@ Categories
 <script type="text/javascript">
   function filterUsingCategory(selectedCategory) {
         var id = 0;
+       
+        var cats = ["poultry","roasts"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'all' || cats.includes(selectedCategory))
+          ? 'unset'
+          : 'none';
        
         var cats = ["cookies","baking","citrus"]
 
