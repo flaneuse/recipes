@@ -120,6 +120,11 @@ layout: default
         {% endif %}
       </article>
 
+      <!-- image -->
+      {% if page.image %}
+      <img alt="{{page.name}}" class="recipe-image my-4" src="{{ site.baseurl }}/assets/img/{{page.image}}" />
+      {% endif %}
+
       <div class="return my-5">
         <a href="/recipes/" class="d-flex align-items-center">
           <svg class="icon icon-angle-double-left mr-2">
