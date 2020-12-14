@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Field Blend 1
-description: 10% rye,
+description: 15% rye, 10% whole wheat blend
 image: field-blend-1.jpg
 aggregateRating: 4
 dateCreated: 2020-12-01
@@ -31,7 +31,7 @@ suitableForDiet:
   - vegan
   - vegetarian
 recipeIngredient:
-  -
+  - 
 recipeInstructions:
   -
 comment:
