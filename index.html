@@ -6,121 +6,125 @@ layout: default
 ---
 
 <div class="col-sm-12">
-<h1>Recipes</h1>
-<!-- <p class="my-2">Personal collection of recipes and notes</p> -->
+  <h1>Recipes</h1>
+  <!-- <p class="my-2">Personal collection of recipes and notes</p> -->
 </div>
 
 <div class="d-flex">
-<div class="post-list d-flex flex-wrap">
-  <!-- {% assign posts_grouped = site.posts | sort: 'aggregateRating' | reverse %} -->
-  {% assign id = 0 %}
-  {% for post in site.posts %}
-  {% assign id = id | plus:1 %}
+  <div class="post-list d-flex flex-wrap">
+    <!-- {% assign posts_grouped = site.posts | sort: 'aggregateRating' | reverse %} -->
+    {% assign id = 0 %}
+    {% for post in site.posts %}
+    {% assign id = id | plus:1 %}
 
-  <div class="card py-3" id="{{id}}">
-    <!-- image -->
-    {% if post.image %}
-    <img alt="{{post.name}}" class="card-image" src="{{ site.baseurl }}/assets/img/{{post.image}}" />
-    {% else %}
-    <div class="image-placeholder"> </div>
-    {% endif %}
-<div class="d-flex flex-column justify-content-between flex-grow-1">
-  <div>
-    <!-- title/link -->
-    <h3 class="mx-0 mt-3 mb-2">
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.name }}</a>
-    </h3>
-
-<!-- rating -->
-    <div id="rating" class="m-0">
-      {% assign rating_ceil = post.aggregateRating | ceil %}
-      {% assign rating_floor = post.aggregateRating | floor %}
-      {% assign rating_half = rating_ceil | minus: rating_floor %}
-      {% assign rating_empty = 5 | minus: rating_ceil %}
-
-      {% for star in (1..rating_floor) %}
-      <svg class="star-icon">
-        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#star"></use>
-      </svg>
-      {% endfor %}
-
-      {% if rating_half == 1 %}
-      <svg class="star-icon">
-        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#half-star"></use>
-      </svg>
-      {% endif %}
-
-      {% for star in (1.. rating_empty) %}
-      <svg class="star-icon">
-        <use xlink:href="{{ site.baseurl }}/assets/icons.svg#empty-star"></use>
-      </svg>
-      {% endfor %}
-    </div>
-
-    <!-- provenance -->
-    <small class="d-block mb-2">
-      based on:
-      {% for source in post.isBasedOn %}
-      {% if source.url %}
-      <a href="{{source.url}}" target="_blank">
-      {% if source.name %}
-      <span>{{source.name}}</span>
-      {% else %}
-      <span>{{source.author}}</span>
-      {% endif %}
+    <div class="card py-3" id="{{id}}">
+      <!-- image -->
+      {% if post.image %}
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <img alt="{{post.name}}" class="card-image" src="{{ site.baseurl }}/assets/img/{{post.image}}" />
       </a>
       {% else %}
-      <span>{{ source.name }}</span>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <div class="image-placeholder"> </div>
+      </a>
       {% endif %}
-      {% if source.name %}
-      <span>by </span>
-      <span>{{ source.author }}</span>
-      {% endif %}
-      {% endfor %}
-    </small>
-    </div>
+      <div class="d-flex flex-column justify-content-between flex-grow-1">
+        <div>
+          <!-- title/link -->
+          <h3 class="mx-0 mt-3 mb-2">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.name }}</a>
+          </h3>
+
+          <!-- rating -->
+          <div id="rating" class="m-0">
+            {% assign rating_ceil = post.aggregateRating | ceil %}
+            {% assign rating_floor = post.aggregateRating | floor %}
+            {% assign rating_half = rating_ceil | minus: rating_floor %}
+            {% assign rating_empty = 5 | minus: rating_ceil %}
+
+            {% for star in (1..rating_floor) %}
+            <svg class="star-icon">
+              <use xlink:href="{{ site.baseurl }}/assets/icons.svg#star"></use>
+            </svg>
+            {% endfor %}
+
+            {% if rating_half == 1 %}
+            <svg class="star-icon">
+              <use xlink:href="{{ site.baseurl }}/assets/icons.svg#half-star"></use>
+            </svg>
+            {% endif %}
+
+            {% for star in (1.. rating_empty) %}
+            <svg class="star-icon">
+              <use xlink:href="{{ site.baseurl }}/assets/icons.svg#empty-star"></use>
+            </svg>
+            {% endfor %}
+          </div>
+
+          <!-- provenance -->
+          <small class="d-block mb-2">
+            based on:
+            {% for source in post.isBasedOn %}
+            {% if source.url %}
+            <a href="{{source.url}}" target="_blank">
+              {% if source.name %}
+              <span>{{source.name}}</span>
+              {% else %}
+              <span>{{source.author}}</span>
+              {% endif %}
+            </a>
+            {% else %}
+            <span>{{ source.name }}</span>
+            {% endif %}
+            {% if source.name %}
+            <span>by </span>
+            <span>{{ source.author }}</span>
+            {% endif %}
+            {% endfor %}
+          </small>
+        </div>
 
 
-    <small>
-    <!-- date -->
-    <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
+        <small>
+          <!-- date -->
+          <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
 
-    <span class="mx-2">•</span>
+          <span class="mx-2">•</span>
 
-    {% assign sorted_cats = post.recipeCuisine | sort %}
-    {% for category in sorted_cats %}
-    <span class="category mr-1">
-      {{ category }}
-      </span>
-      {% endfor %}
-
-    <span class="mx-2">•</span>
-
-    {% assign sorted_keys = post.keywords | concat: post.recipeCategory | sort %}
-    {% for category in sorted_keys %}
-    <span class="keyword mr-1">
-      {{ category }}
-      </span>
+          {% assign sorted_cats = post.recipeCuisine | sort %}
+          {% for category in sorted_cats %}
+          <span class="category mr-1">
+            {{ category }}
+          </span>
           {% endfor %}
-    </small>
-</div>
-  </div>
-  {% endfor %}
-</div>
-<div class="col-sm-2 category-list">
-Categories
-<button id="all" onclick="filterUsingCategory('all')">
-  clear filter
-</button>
 
-{% assign categories = site.posts | map: "keywords" | uniq | sort %}
-{% for category in categories %}
-  {% assign cat = category %}
-  <button id="{{ cat }}" onclick="filterUsingCategory(this.id)">
-    {{ cat }}
-  </button>
-{% endfor %}
-</div>
+          <span class="mx-2">•</span>
+
+          {% assign sorted_keys = post.keywords | concat: post.recipeCategory | sort %}
+          {% for category in sorted_keys %}
+          <span class="keyword mr-1">
+            {{ category }}
+          </span>
+          {% endfor %}
+        </small>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="col-sm-2 category-list">
+    Categories
+    <button id="all" onclick="filterUsingCategory('all')">
+      clear filter
+    </button>
+
+    {% assign categories = site.posts | map: "keywords" | uniq | sort %}
+    {% for category in categories %}
+    {% assign cat = category %}
+    <button id="{{ cat }}" onclick="filterUsingCategory(this.id)">
+      {{ cat }}
+    </button>
+    {% endfor %}
+  </div>
 </div>
 
 <!-- Pagination links -->
@@ -145,15 +149,22 @@ Categories
 <!-- from https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/ -->
 <script type="text/javascript">
   function filterUsingCategory(selectedCategory) {
-        var id = 0;
-       {% for post in site.posts %}
-        var cats = {{ post.keywords | jsonify }}
+    var id = 0; {
+      %
+      for post in site.posts %
+    }
+    var cats = {
+      {
+        post.keywords | jsonify
+      }
+    }
 
-      var postDiv = document.getElementById(++id);
-      postDiv.style.display =
-        (selectedCategory == 'all' || cats.includes(selectedCategory))
-          ? 'unset'
-          : 'none';
-       {% endfor %}
+    var postDiv = document.getElementById(++id);
+    postDiv.style.display =
+      (selectedCategory == 'all' || cats.includes(selectedCategory)) ?
+      'unset' :
+      'none'; {
+      % endfor %
+    }
   }
-  </script>
+</script>
