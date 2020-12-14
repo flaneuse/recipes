@@ -210,6 +210,7 @@ keywords:
   - pies and tarts
   - pizza and calzones
   - poultry
+  - potatoes
   - project
   - punches
   - quick breads
