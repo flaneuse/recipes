@@ -9,9 +9,27 @@ button {
   margin: 0.1rem;
   cursor: pointer; }
 
+.banner-img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover; }
+
+.page-content {
+  min-height: 65vh; }
+
+.spacey p {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
 header nav {
-  background: #ccc;
+  background: #6e5949;
   padding: 1em; }
+  header nav a {
+    color: white !important; }
+
+footer {
+  background: #EDEAE0;
+  padding: 0.15em 1em; }
 
 body {
   font-family: "Commissioner", Helvetica, Arial, sans-serif;
@@ -39,6 +57,20 @@ a .icon {
   fill: #148974; }
   a .icon:hover {
     fill: #1ab69a; }
+
+footer .icon {
+  height: 15px;
+  width: 15px; }
+
+footer {
+  font-size: 0.85em; }
+
+footer a, footer a .icon {
+  color: #6e5949 !important;
+  fill: #6e5949 !important; }
+  footer a:hover, footer a .icon:hover {
+    color: #a75f29 !important;
+    fill: #a75f29 !important; }
 
 .ingredient p {
   margin: 0;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,46 +19,71 @@
 </head>
 
 
-  <body>
-    <header>
-  <nav>
-    laura hughes | recipes
+<body>
+  <header>
+  <nav class="d-flex justify-content-between">
+    <a href="/recipes/">
+      laura hughes | recipes
+    </a>
+    <a href="/recipes/about">
+      about
+    </a>
   </nav>
 </header>
 
-
-    <div class="page-content">
-      <div class="wrapper container">
-        <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
-  </header>
-
-  <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
-
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
-
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
-
-
+  <div class="mt-3">
+    <img class="banner-img" alt="cookbooks" src="/recipes/assets/img/cookbooks.jpg" />
   </div>
 
-</article>
+  <div class="page-content">
+    <div class="wrapper container">
+      <div class="page col-md-8 col-sm-10">
+        <h1>About</h1>
+        <div class="spacey">
+          <p>I’m a scientist who loves cooking, data visualization, and helping understand problems that affect human health one organized piece of data at a time.</p>
 
+<p>There are few simple pleasures that make me happier than a new cookbook to explore; this site is my lab notebook of recipes I’ve tested, my opinions of them, and adjustments I’ve made along the way.</p>
+
+<p>You can find more about my professional portfolio at <a href="http://lauradhughes.com">lauradhughes.com</a>.</p>
+
+        </div>
       </div>
     </div>
+  </div>
 
-    <footer class="container">
-<p class="rss-subscribe">subscribe <a href="/recipes/feed.xml">via RSS</a></p>
+  <footer>
+  <nav class="d-flex justify-content-between my-2">
+    <p class="rss-subscribe m-0">subscribe <a href="/recipes/feed.xml">via RSS</a></p>
+    <a href="https://github.com/flaneuse" target="_blank" class="d-flex align-items-center">
+      <svg class="icon mr-2">
+        <use xlink:href="/recipes/assets/icons.svg#github"></use>
+      </svg>
+      <div>
+        @flaneuse
+      </div>
+    </a>
+
+    <a href="https://twitter.com/flaneuseks" target="_blank" class="d-flex align-items-center">
+      <svg class="icon mr-2">
+        <use xlink:href="/recipes/assets/icons.svg#twitter"></use>
+      </svg>
+      <div>
+        @flaneuseks
+      </div>
+    </a>
+
+    <p class="m-0">
+      <span class="mr-2">
+        &copy; 2020
+      </span>
+      <span>
+        Laura D. Hughes
+      </span>
+    </p>
+  </nav>
 </footer>
 
 
-  </body>
+</body>
 
 </html>

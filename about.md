@@ -1,18 +1,11 @@
 ---
-layout: page
+layout: banner
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm a scientist who loves cooking, data visualization, and helping understand problems that affect human health one organized piece of data at a time.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+There are few simple pleasures that make me happier than a new cookbook to explore; this site is my lab notebook of recipes I've tested, my opinions of them, and adjustments I've made along the way.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+You can find more about my professional portfolio at [lauradhughes.com](http://lauradhughes.com).

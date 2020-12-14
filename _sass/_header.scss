@@ -1,5 +1,13 @@
 header nav {
   // background: lighten($chartreuse, 50%);
-  background: #ccc;
+  background: $header;
   padding: 1em;
+  a {
+    color: white !important;
+  }
+}
+
+footer {
+  background: $footer;
+  padding: 0.15em 1em;
 }

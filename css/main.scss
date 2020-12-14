@@ -69,6 +69,24 @@ a .icon {
   }
 }
 
+footer .icon {
+  height: 15px;
+  width: 15px;
+}
+
+footer {
+  font-size: 0.85em;
+}
+
+footer a, footer a .icon{
+  color: $header !important;
+  fill: $header !important;
+  &:hover {
+    color: #a75f29 !important;
+    fill: #a75f29 !important;
+  }
+}
+
 .ingredient p {
   margin: 0;
   margin-top: 0.25em;
