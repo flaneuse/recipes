@@ -2,7 +2,7 @@
 layout: post
 name: Roasted Potatoes with Leeks and Herbs
 image: roasted-leek-potatoes.jpg
-aggregateRating: 4
+aggregateRating: 3.5
 dateCreated: 2020-12-13
 dateModified: 2020-12-13
 isBasedOn:
