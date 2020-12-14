@@ -52,6 +52,6 @@ recipeInstructions:
 comment:
   - 12 minute cookies seem about perfect.
   - Flavor is mildly lemony, but pleasant.  Dorie says they're not overpowering, and she's right.  Might consider adding the lemon oil/extract and/or adding the zest of the second lemon.
-  - "These tend towards the sugary spectrum of cookies (appropriately, since they're sugar cookies, and much more than [Jocelyn Delk Adams's lemon tea cakes](/2020/12/05/lemon-tea-cakes.html)).  They're good even without dredging in sugar, and are a bit too much when rolled in coarse Whole Foods cane sugar (or presumably turbinado or other coarse sugars).  Normal fine granulated sugar seems best if rolling in sugar before baking."
+  - "These tend towards the sugary spectrum of cookies (appropriately, since they're sugar cookies, and much more than [Jocelyn Delk Adams's lemon tea cakes](/recipes/lemon-tea-cakes/)).  They're good even without dredging in sugar, and are a bit too much when rolled in coarse Whole Foods cane sugar (or presumably turbinado or other coarse sugars).  Normal fine granulated sugar seems best if rolling in sugar before baking."
   - "Needed 2 medium lemons to get &frac14; cup of juice."
 ---
