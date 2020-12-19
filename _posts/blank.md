@@ -1,10 +1,16 @@
 # Note: make sure not to name filename with underscores.  should be `YYYY-MM-DD-the-title.md`
 ---
 layout: post
+"@type": Recipe
+"@context": http://schema.org
 name:
 description:
+category:
+tag:
 image:
 aggregateRating:
+  "@type": AggregateRating
+  ratingValue:
 dateCreated:
 dateModified:
 isBasedOn:
@@ -193,6 +199,7 @@ keywords:
   - dumplings
   - editors' pick
   - finger foods
+  - fruit
   - grains and rice
   - ice creams and sorbets
   - ice dishes
