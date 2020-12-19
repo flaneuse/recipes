@@ -149,22 +149,16 @@ layout: default
 <!-- from https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/ -->
 <script type="text/javascript">
   function filterUsingCategory(selectedCategory) {
-    var id = 0; {
-      %
-      for post in site.posts %
-    }
-    var cats = {
-      {
-        post.keywords | jsonify
-      }
-    }
+    var id = 0;
+    {% for post in site.posts %}
+
+    var cats = {{ post.keywords | jsonify }}
 
     var postDiv = document.getElementById(++id);
     postDiv.style.display =
       (selectedCategory == 'all' || cats.includes(selectedCategory)) ?
       'unset' :
-      'none'; {
-      % endfor %
-    }
+      'none';
+      {% endfor %}
   }
 </script>
