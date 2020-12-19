@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Sour Cream Pancakes
 aggregateRating: 5
 dateCreated: 2020-12-07

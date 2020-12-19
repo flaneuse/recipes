@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Tartine Tomato Sauce
 aggregateRating: 3.5
 dateCreated: 2020-12-08

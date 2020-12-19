@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Lemon Tea Cakes
 image: lemon-tea.jpg
 aggregateRating: 3

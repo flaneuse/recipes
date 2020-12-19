@@ -1,8 +1,5 @@
 # Note: make sure not to name filename with underscores.  should be `YYYY-MM-DD-the-title.md`
 ---
-layout: post
-"@type": Recipe
-"@context": http://schema.org
 name:
 description:
 category:

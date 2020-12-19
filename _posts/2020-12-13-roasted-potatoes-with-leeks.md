@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Roasted Potatoes with Leeks and Herbs
 image: roasted-leek-potatoes.jpg
 aggregateRating: 3.5

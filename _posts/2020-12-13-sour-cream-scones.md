@@ -1,7 +1,4 @@
 ---
-layout: post
-"@type": Recipe
-"@context": http://schema.org
 name: Sour Cream Scones with Fruit
 description:
 category:

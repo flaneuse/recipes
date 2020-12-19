@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Snickerdoodles
 image: snickerdoodles.jpg
 isBasedOn:

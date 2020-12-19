@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Roast Chicken with Mushroom and Sage Butter under the skin
 image: sage-mushroom-chicken.jpg
 aggregateRating: 3

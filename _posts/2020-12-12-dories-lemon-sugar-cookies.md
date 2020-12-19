@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Dorie's Lemon Sugar Cookies
 image: lemon-sugar.jpg
 aggregateRating: 4.5

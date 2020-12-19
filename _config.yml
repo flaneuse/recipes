@@ -24,6 +24,16 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      "@type": Recipe
+      "@context": http://schema.org
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

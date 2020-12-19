@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Tartine Meatballs
 aggregateRating: 4
 dateCreated: 2020-12-08

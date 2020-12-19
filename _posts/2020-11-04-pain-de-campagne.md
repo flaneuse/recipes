@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Pain de Campagne
 description: Levain bread
 image: pain-de-campagne.jpg

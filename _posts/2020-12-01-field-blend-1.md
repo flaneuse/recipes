@@ -1,5 +1,4 @@
 ---
-layout: post
 name: Field Blend 1
 description: 15% rye, 10% whole wheat blend
 image: field-blend-1.jpg
@@ -31,7 +30,7 @@ suitableForDiet:
   - vegan
   - vegetarian
 recipeIngredient:
-  - 
+  -
 recipeInstructions:
   -
 comment:
