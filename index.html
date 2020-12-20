@@ -76,10 +76,20 @@ layout: default
             {% else %}
             <span>{{ source.name }}</span>
             {% endif %}
-            {% if source.name %}
+            {% if source.author %}
             <span>by </span>
             <span>{{ source.author }}</span>
             {% endif %}
+
+            {% assign author_length = post.isBasedOn | size %}
+            {% assign author_diff = author_length | minus: forloop.index | minus: 1 %}
+            {% if author_length > 0 %}
+            {% if author_diff > 0 %}
+            <span>, </span>
+            {% elsif author_diff == 0 %}
+            <span> and</span>
+            {% endif%}
+            {% endif%}
             {% endfor %}
           </small>
         </div>

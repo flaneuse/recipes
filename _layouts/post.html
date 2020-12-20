@@ -54,11 +54,30 @@ layout: default
           based on:
           {% for source in page.isBasedOn %}
           {% if source.url %}
-          <a href="{{source.url}}" target="_blank">{{source.name}}</a>
+          <a href="{{source.url}}" target="_blank">
+            {% if source.name %}
+            <span>{{source.name}}</span>
+            {% else %}
+            <span>{{source.author}}</span>
+            {% endif %}
+          </a>
           {% else %}
           <span>{{ source.name }}</span>
           {% endif %}
-          <span>by {{ source.author }}</span>
+          {% if source.author %}
+          <span>by </span>
+          <span>{{ source.author }}</span>
+          {% endif %}
+
+          {% assign author_length = page.isBasedOn | size %}
+          {% assign author_diff = author_length | minus: forloop.index | minus: 1 %}
+          {% if author_length > 0 %}
+          {% if author_diff > 0 %}
+          <span>, </span>
+          {% elsif author_diff == 0 %}
+          <span> and</span>
+          {% endif%}
+          {% endif%}
           {% endfor %}
         </p>
 
