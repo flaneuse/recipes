@@ -29,6 +29,7 @@ recipeCuisine:
 keywords:
   - baking
   - fruit
+  - scones
 suitableForDiet:
   - vegetarian
 recipeIngredient:
