@@ -81,9 +81,16 @@ layout: default
         <!-- <h4>Instructions</h4> -->
         <ol id="instructions">
           {% for instruction in page.recipeInstructions %}
+          {% assign first_char = instruction | slice: 0 %}
+          {% if first_char == "<" %}
+          <div class="subsection p-0">
+            {{ instruction | markdownify }}
+            </div>
+          {% else %}
           <li>
             {{ instruction | markdownify }}
           </li>
+          {% endif %}
           {% endfor %}
         </ol>
 

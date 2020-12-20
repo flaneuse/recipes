@@ -224,6 +224,7 @@ keywords:
   - sauces
   - sausages
   - seafood
+  - scones
   - shakes and smoothies
   - skewers and kebabs
   - slaws
