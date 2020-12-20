@@ -46,7 +46,7 @@ recipeInstructions:
   - "Preheat the oven to 350 &deg;F."
   - Make sure to keep all ingredients as cold as possible throughout and work the dough as little as possible to avoid building up gluten.
   - Mix the flour, baking powder, salt, and sugar together.
-  - Add the chunks of cold butter and coat with the flour mix.  Using a pastry cutter, blend the flour / butter together until you have pea-sized chunks.  If you don't have a pastry cutter, you can use two knives or your hands.  Other people use food processors, which makes it simple but can build up excess gluten and end up with tougher scones.
+  - Add the chunks of cold butter and coat with the flour mix.  Using a pastry cutter, blend the flour / butter together until you have pea-sized chunks.  If you don't have a pastry cutter, you can use two knives or your hands.  Other people use food processors, which makes it simple but can build up excess gluten, leading to tougher scones.
   - "Mix together the egg with &frac14 cup of cold heavy cream."
   - "Add the cream/egg and mix with your hands till you have a loose dough, adding more cream as needed.  At the end, the dough should be soft and completely together without dry spots but should not be sticky-- think a little bit stiffer than Play-doh consistency.  Typically, I add most of the &frac14; cup of cream/egg mixture and blend by hand and slowly dribble in more cream until the consistency feels right.  That's often close to an additional &frac14; cup of cream, for &frac12; cup total.  Avoid kneading the dough; you want to work it as little as possible."
   - If you want to laminate the dough, roll out or press the dough and fold over itself a few times to create flaky layers like a biscuit (see raspberry almond variation).
