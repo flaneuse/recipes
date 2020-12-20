@@ -63,7 +63,7 @@ recipeInstructions:
   - Fold the dough in thirds, enveloping the berries and nuts.  Where possible, try to make sure the raspberries are tucked in, lest they're on the edges of the scone, where their juices will caramelize and burn in the oven.
   - If you want to top with almonds, baste with egg wash or cream and sprinkle with almonds and sugar (otherwise they won't stick).
   - "<h4>Fruit scones</h4>"
-  - Follow the procedure for raspberry almond scones, omitting the raspberries.
+  - Follow the procedure for raspberry almond scones, omitting the almonds and adding 1 cup of frozen fruit.
   - If using peaches, cut them into chunks. Cherries should be halved.
   - Fresh fruit should be frozen before mixing to maintain their integrity.
   - 1 teaspoon of lemon zest can be added to the dry ingredients.
