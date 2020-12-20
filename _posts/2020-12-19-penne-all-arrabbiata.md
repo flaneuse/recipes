@@ -36,7 +36,7 @@ recipeIngredient:
   - 1 tablespoon garlic (~3-4 cloves)
   - 1 tablespoon red pepper flakes
   - 6 oz. tomato paste
-  - 16 oz. can of crushed tomatoes
+  - 26 oz. can of crushed tomatoes
   - olive oil
   - pasta, to serve, or pizza dough
   - parmesan, to serve
