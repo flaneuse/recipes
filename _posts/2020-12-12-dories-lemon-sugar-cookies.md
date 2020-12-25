@@ -26,7 +26,7 @@ suitableForDiet:
   - vegetarian
 recipeIngredient:
   - "300 g (1 &frac12; cups) sugar"
-  - "1 or 2 lemons (zested and &frac14; cup juice)"
+  - "zest of 1  lemon and and &frac14; cup juice (1 - 2 lemons)"
   - 2 sticks (8 ounces; 226 grams) unsalted butter, and cut into chunks, at room temperature
   - "&frac12; teaspoon fine sea salt"
   - 1 egg, at room temperature
