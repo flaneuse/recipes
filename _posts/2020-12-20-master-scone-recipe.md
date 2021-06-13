@@ -82,4 +82,10 @@ recipeInstructions:
   - "<h4>Cinnamon scones</h4>"
   - "Add ~ 1 teaspoon of cinnamon to the flour mix before cutting the butter in. Note: I haven't made this variation in awhile, so this is just a rough estimate of how much cinnamon to add.  Add what looks right."
   - Sprinkle with cinnamon sugar before baking.
+comment;
+  - Always work cold: cold butter, cold cream, cold eggs, cold/frozen fruit. This helps keep the scones tender and flaky.
+  - Avoid working the dough very much; overworking leads to gluten, which makes the scones tough.
+  - I mix by hand to find the right consistency; they should be a soft but dry dough, of the consistency of fresh Play-doh. They shouldn't feel dry, nor should they feel sticky.
+corrections:
+  - I tend to use ~ double the amount of cream from the original recipe, to avoid overworking the dough and kneading it to have it come together. As a result, they tend to softer and moister, but also richer.
 ---
