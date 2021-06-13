@@ -84,6 +84,7 @@ recipeInstructions:
   - Sprinkle with cinnamon sugar before baking.
 comment:
   - "Always work cold: cold butter, cold cream, cold eggs, cold/frozen fruit. This helps keep the scones tender and flaky."
+  - "Freezing the fruit is a suggestion from the Tartine cookbook. When working with fresh fruit &mdash; especially moist fruits like strawberries and peaches &mdash; they can start to prematurely sweat and add moisture to the dough, which makes it sticky. Frozen fruit avoids this problem and makes sure the butter doesn't melt till it's in the oven."
   - "Avoid working the dough very much; overworking leads to gluten, which makes the scones tough."
   - "I mix by hand to find the right consistency; they should be a soft but dry dough, of the consistency of fresh Play-doh. They shouldn't feel dry, nor should they feel sticky."
 corrections:
