@@ -67,8 +67,16 @@ recipeInstructions:
   - If using peaches, cut them into chunks. Cherries should be halved.
   - Fresh fruit should be frozen before mixing to maintain their integrity.
   - 1 teaspoon of lemon zest can be added to the dry ingredients.
+  - "<h4>Rhubarb or strawberry rhubarb</h4>"
+  - (optional) Add the zest of a ~ &frac14; to &frac12; lemon to the sugar and rub to release the lemony oils.  Add to the flour/baking powder.
+  - Increase the sugar to 70 g.
+  - Mix the dough as usual.
+  - Roll rhubarb chunks in a bit of sugar to offset their special tartness.
+  - Roll out the dough, add a layer of sugary rhubarb, and then an optional layer of frozen strawberry chunks.  Laminate, cut, and bake as usual.
+  - The rhubarb will start weeping from the sugar, so work quickly and/or work with frozen rhubarb. It'll also take slightly longer to cook, since the fruit releases more moisture than other fruits.
   - "<h4>Blueberry lemon</h4>"
   - Add the zest of a lemon to the sugar and rub to release the lemony oils.  Add to the flour/baking powder.
+  - Increase the sugar to 60 - 70 g.
   - Mix the dough as usual.
   - Incorporate frozen blueberries like with the raspberry almond method (roll out, laminate into the middle).
   - "<h4>Cinnamon scones</h4>"
